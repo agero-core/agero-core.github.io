@@ -36,7 +36,6 @@ function loadRepositoryData(repoData) {
   $('.projects .featured').empty();
   $('.projects .not-featured').empty();
 
-  org.addReposToContainer($('.projects .featured'), org.featuredRepos());
   org.addReposToContainer($('.projects .not-featured'), org.regularRepos());
 
   $('.project-count').html(org.forkedCount());
@@ -47,8 +46,8 @@ function loadMemberData(members) {
 }
 
 $(document).ready(function() {
-  getGithubRepos(loadRepositoryData);
-  getGithubMembers(loadMemberData);
+  //getGithubRepos(loadRepositoryData);
+  //getGithubMembers(loadMemberData);
 });
 
 
