@@ -9,23 +9,13 @@ Repository = function(repo) {
   this.forks       = repo.forks;
 }
 
-Repository.prototype.classes = function() {
-}
-
-Repository.prototype.getBlogLink = function() {
-  if (this.blogPost()) {
-    return '<a href="'+ this.blogPost() +'" target="_blank"><span class="octicon octicon-file-text"></span> Usage</a> ';
-  }
-}
-
 Repository.prototype.getContainer = function(index) {
   var last = '';
   if (index % 4 == 0) { last = 'last-in-row' }
 
   return [
-    '<div class="project island-light island-stack island ', this.language, ' ', this.classes(), ' ', last, '">',
+    '<div class="project island-light island-stack island ', this.language, ' ', last, '">',
       this.repoContent(),
-      this.bottomLinks(),
     '</div>'
   ].join('');
 }
@@ -44,16 +34,6 @@ Repository.prototype.repoContent = function() {
       '<p>', this.description, '</p>',
     '</div>'
   ].join('');
-}
-
-Repository.prototype.bottomLinks = function() {
-  if (this.blogPost()) {
-    return [
-      '<div class="island-item bottom-links">',
-        this.getBlogLink(),
-      '</div>'
-    ].join('');
-  }
 }
 
 // vim: sw=2 sts=2 expandtab

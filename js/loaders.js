@@ -37,8 +37,6 @@ function loadRepositoryData(repoData) {
   $('.projects .not-featured').empty();
 
   org.addReposToContainer($('.projects .not-featured'), org.regularRepos());
-
-  $('.project-count').html(org.forkedCount());
 }
 
 function loadMemberData(members) {
