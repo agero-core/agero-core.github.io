@@ -131,7 +131,7 @@ h3 a i {
   font-weight: bold;
 }
 .project .repo-info .Python { color: #228222; }
-.project .repo-info .Ruby { color: #d83800; }
+.project .repo-info .CSharp { color: #531f7e; }
 
 .project .repo-info h3 { margin-bottom: 10px; }
 .project .repo-info span { margin-right: 20px; }
