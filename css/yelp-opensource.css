@@ -23,13 +23,14 @@ h3 a i {
 }
 
 .top-shelf h1 {
-  padding-top: 52px;
+  padding-top: 100px;
 }
 
 .top-shelf-grey .container {
   background: url(../img/illustration.png) no-repeat right;
+  background-size: 80px;
   height: 240px;
-  width: 960px;
+  width: 560px;
 }
 
 .main-container {
