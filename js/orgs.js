@@ -20,4 +20,4 @@ Organization.prototype.addReposToContainer = function(container, repos) {
   });
 }
 
-// vim: sw=2 sts=2 expandtab
+

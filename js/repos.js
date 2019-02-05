@@ -36,4 +36,4 @@ Repository.prototype.repoContent = function() {
   ].join('');
 }
 
-// vim: sw=2 sts=2 expandtab
+
