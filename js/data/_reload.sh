@@ -36,11 +36,3 @@ get_repos() {
 }
 
 (echo -n '$(function() { loadRepositoryData(' ; get_repos ; echo '); })') > load_repos.js
-
-# Members
-
-get_members() {
-  get_all_pages 'https://api.github.com/orgs/agero-core/members'
-}
-
-(echo -n '$(function() { loadMemberData(' ; get_members ; echo '); })') > load_members.js
