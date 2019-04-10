@@ -24,7 +24,7 @@ Repository.prototype.repoContent = function() {
   return [
     '<div class="island-item">',
       '<h3>',
-        '<a href="', this.url, '" target="_blank">', this.name, '</a>',
+        '<a href="', this.url, '" target="_blank" onClick="return false;">', this.name, '</a>',
       '</h3>',
       '<div class="repo-info">',
         '<span><i class="octicon octicon-star"></i> ', this.watchers, '</span> ',
